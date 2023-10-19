@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menu</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Feather Icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--My Style-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Terazzibon<span>collection</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      <!-- Search From Start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search From End -->
+
+      <!-- Shopping Cart Start -->
+      <div class="shopping-cart">
+        <div class="scroll">
+          <form class="whatsapp-form">
+            <h1>Send Order Via WhatsApp</h1>
+            <h2>Informasi Pemesanan</h2>
+            <div class="datainput">
+              <input type="text" class="wa" />
+              <span class="highlight"></span><span class="bar"></span>
+              <label>No WhatsApp</label>
+              <p>
+                Akan Di Informasikan Melalui WhatsApp Jika Terjadi Perubahan Dan
+                Pemberitahuan Pesanan
+              </p>
+            </div>
+            <div class="datainput">
+              <input type="text" class="name" />
+              <span class="highlight"></span><span class="bar"></span>
+              <label>Nama Penerima</label>
+            </div>
+            <div class="datainput">
+              <input type="text" class="product" />
+              <span class="highlight"></span><span class="bar"></span>
+              <label>Nama Barang</label>
+            </div>
+            <div class="datainput">
+              <input type="text" class="jumlah" />
+              <span class="highlight"></span><span class="bar"></span>
+              <label>Jumlah Barang</label>
+            </div>
+            <div class="datainput">
+              <input type="text" class="hp" />
+              <span class="highlight"></span><span class="bar"></span>
+              <label>No Handphone</label>
+            </div>
+            <div class="datainput">
+              <input type="text" class="prov" />
+              <span class="highlight"></span><span class="bar"></span>
+              <label>Provinsi</label>
+            </div>
+            <div class="datainput">
+              <input type="text" class="kecamatan" />
+              <span class="highlight"></span><span class="bar"></span>
+              <label>Kecamatan</label>
+            </div>
+            <div class="datainput">
+              <input type="text" class="kelurahan" />
+              <span class="highlight"></span><span class="bar"></span>
+              <label>Kelurahan</label>
+            </div>
+            <div class="datainput">
+              <textarea
+                class="alamat"
+                placeholder=""
+                maxlength="5000"
+                row="1"
+                required=""
+              ></textarea>
+              <span class="highlight"></span><span class="bar"></span>
+              <label>Alamat Lengkap</label>
+              <p>Masukan Alamat Lebih Detail (No Rumah,RT,RW,dll)</p>
+            </div>
+            <button type="button" onclick="sendwhatsapp();">
+              OrderViaWhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Shopping Cart End -->
+    </nav>
+    <!-- Navbar End -->
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+      <h2><span>Produk</span> Kami</h2>
+      <p>Semua produk merupakan 100% dibuat dari Terazzibon collection</p>
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="img/menu/terazzibon-produk.jpg"
+            alt="Bucket Bag"
+            class="menu-card-title"
+          />
+          <h3 class="menu-card-title">-Bucket Bag-</h3>
+          <p class="menu-card-price">IDR xxx</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/terazzibon-produk1.jpg"
+            alt="Pocket Bag"
+            class="menu-card-title"
+          />
+          <h3 class="menu-card-title">-Pocket Bag-</h3>
+          <p class="menu-card-price">IDR xxx</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/terazzibon-produk2.jpg"
+            alt="Waist Bag"
+            class="menu-card-title"
+          />
+          <h3 class="menu-card-title">-Waist Bag-</h3>
+          <p class="menu-card-price">IDR xxx</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/terazzibon-produk3.jpg"
+            alt="Totebag"
+            class="menu-card-title"
+          />
+          <h3 class="menu-card-title">-Totebag-</h3>
+          <p class="menu-card-price">IDR xxx</p>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/terazzibon-produk4.jpg"
+            alt="Mini Backpack"
+            class="menu-card-title"
+          />
+          <h3 class="menu-card-title">-Mini Backpack-</h3>
+          <p class="menu-card-price">IDR xxx</p>
+        </div>
+      </div>
+    </section>
+    <div class="popup" onclick="myFunction()">
+      Informasi Pemesanan!
+      <span class="popuptext" id="myPopup"
+        >Klik Keranjang Belanja Dan Isi Informasi Pemesanan, Maka Pesanan Akan
+        Dibawa Ke WhatsApp</span
+      >
+    </div>
+    <!-- Menu Section End -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/terazzibon_collection/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="whatsapp://send?text=Hello&phone=+6281219348414"
+          ><i data-feather="message-circle"></i
+        ></a>
+        <a href="https://web.facebook.com/linda.shelly.73"
+          ><i data-feather="facebook"></i
+        ></a>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created By <a href="">Ferdinan</a>. | &copy; 2023</p>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Script Form Order -->
+    <script>
+      function sendwhatsapp() {
+        var phonenumber = "+6289625148651";
+
+        var wa = document.querySelector(".wa").value;
+        var name = document.querySelector(".name").value;
+        var product = document.querySelector(".product").value;
+        var jumlah = document.querySelector(".jumlah").value;
+        var hp = document.querySelector(".hp").value;
+        var prov = document.querySelector(".prov").value;
+        var kecamatan = document.querySelector(".kecamatan").value;
+        var kelurahan = document.querySelector(".kelurahan").value;
+        var alamat = document.querySelector(".alamat").value;
+        var url =
+          "https://wa.me/" +
+          phonenumber +
+          "?text=" +
+          "*No WhatsApp* : " +
+          wa +
+          "%0a" +
+          "*Nama Penerima* : " +
+          name +
+          "%0a" +
+          "*Nama Produk* : " +
+          product +
+          "%0a" +
+          "*Jumlah* : " +
+          jumlah +
+          "%0a" +
+          "*No HP* : " +
+          hp +
+          "%0a" +
+          "*prov* : " +
+          prov +
+          "%0a" +
+          "*Kelurahan* : " +
+          kelurahan +
+          "%0a" +
+          "*alamat* : " +
+          alamat +
+          "%0a%0a" +
+          "Terima Kasih";
+
+        window.open(url, "_blank").focus();
+      }
+    </script>
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+    <script>
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

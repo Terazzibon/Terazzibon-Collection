@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Order</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--My Style-->
+    <link rel="stylesheet" href="..." />
+  </head>
+  <body>
+    <section id="form-order" class="form-order">
+      <form>
+        <h1>Send Order Via WhatsApp</h1>
+        <h2>Informasi Kontak</h2>
+        <label for="">No WhatsApp</label>
+        <input type="number" class="wa" />
+        <label for="">Nama Penerima</label>
+        <input type="text" class="name" />
+        <label for="">Nama Produk</label>
+        <input type="text" class="product" />
+        <label for="">Jumlah</label>
+        <input type="text" class="jumlah" />
+        <label for="">No Hp</label>
+        <input type="text" class="hp" />
+        <label for="">prov</label>
+        <input type="text" class="prov" />
+        <label for="">Kecamatan</label>
+        <input type="text" class="kecamatan" />
+        <label for="">Kelurahan</label>
+        <input type="text" class="kelurahan" />
+        <label for="">Detail Alamat</label>
+        <textarea
+          class="alamat"
+          placeholder=""
+          maxlength="5000"
+          row="1"
+          required=""
+        ></textarea>
+        <button type="button" onclick="sendwhatsapp();">Order</button>
+      </form>
+    </section>
+    <script>
+      function sendwhatsapp() {
+        var phonenumber = "+6289625148651";
+
+        var wa = document.querySelector(".wa").value;
+        var name = document.querySelector(".name").value;
+        var product = document.querySelector(".product").value;
+        var jumlah = document.querySelector(".jumlah").value;
+        var hp = document.querySelector(".hp").value;
+        var prov = document.querySelector(".prov").value;
+        var kecamatan = document.querySelector(".kecamatan").value;
+        var kelurahan = document.querySelector(".kelurahan").value;
+        var alamat = document.querySelector(".alamat").value;
+        var url =
+          "https://wa.me/" +
+          phonenumber +
+          "?text=" +
+          "*No WhatsApp* : " +
+          wa +
+          "%0a" +
+          "*Nama Penerima* : " +
+          name +
+          "%0a" +
+          "*Nama Produk* : " +
+          product +
+          "%0a" +
+          "*Jumlah* : " +
+          jumlah +
+          "%0a" +
+          "*No HP* : " +
+          hp +
+          "%0a" +
+          "*prov* : " +
+          prov +
+          "%0a" +
+          "*Kelurahan* : " +
+          kelurahan +
+          "%0a" +
+          "*alamat* : " +
+          alamat +
+          "%0a%0a" +
+          "Terima Kasih";
+
+        window.open(url, "_blank").focus();
+      }
+    </script>
+  </body>
+</html>
