@@ -119,6 +119,23 @@ body {
   color: var(--bg);
 } */
 
+/* beli sekarang in menu start */
+/* .menu .row .menu-card .box .box-1 .cover .bli {
+  position: absolute;
+  top: -100%;
+  right: 100%;
+  height: 100vh;
+  width: 35rem;
+  padding: 0 1.5rem;
+  background-color: white;
+  transition: 0.3s;
+}
+.menu .row .menu-card .box .box-1 .cover .bli.active {
+  right: 0;
+} */
+
+/* beli sekarang in menu end */
+
 /* Shopping Cart */
 .shopping-cart {
   position: absolute;
@@ -128,11 +145,15 @@ body {
   width: 35rem;
   padding: 0 1.5rem;
   background-color: white;
+  border: black;
+  border-left-style: double;
   transition: 0.3s;
 }
+
 .shopping-cart.active {
-  right: 0;
+  right: 0%;
 }
+
 .shopping-cart form.whatsapp-form {
   margin: 2rem 0;
   display: block;
@@ -160,6 +181,14 @@ body {
   width: 25rem;
 } */
 
+/* background-tambahan start */
+.background-tambahan img {
+  width: 250px;
+  margin-top: -20%;
+  margin-left: -64%;
+}
+
+/* background tambahan end */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -202,7 +231,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 8rem 5% 1.4rem;
+  padding: 4rem 5% 1.4rem;
 }
 .produk-unggulan .row {
   display: inline-block;
@@ -268,7 +297,7 @@ body {
   color: #ffffff;
   background-color: red;
   border-radius: 1.5rem;
-  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  box-shadow: 1px 1px 3px rgba(123, 123, 167, 0.5);
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
 }
@@ -496,6 +525,18 @@ body {
   font-family: "Times New Roman", Times, serif;
   text-decoration: none;
 }
+.myshop .bli {
+  display: inline-block;
+  margin-bottom: 2%;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: red;
+  border-radius: 1.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+}
 /* menu produk animasi */
 .box {
   display: -webkit-box;
@@ -677,7 +718,7 @@ footer {
   background-image: linear-gradient(red, rgb(167, 4, 4));
   text-align: center;
   padding: 1rem 0;
-  margin-top: 3rem;
+  margin-top: -1.3rem;
   padding-bottom: 3rem;
 }
 

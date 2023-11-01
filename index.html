@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- AOS animate -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- icon website -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -55,10 +59,11 @@
       </main>
     </section>
     <!-- Hero Section End -->
+
     <!-- produk unggulan home -->
     <section id="produk-unggulan" class="produk-unggulan">
       <h1>Produk Unggulan Kami</h1>
-      <div class="row">
+      <div class="row" data-aos="fade-right" data-aos-duration="3000">
         <div class="membuat-border">
           <img src="img/menu/terazzibon-produk.jpg" alt="menu-img" />
           <h1 class="jenis-produk-unggulan">Bucket</h1>
@@ -71,7 +76,7 @@
           <a href="#" class="cta">Beli Sekarang</a>
         </div>
       </div>
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-duration="3000">
         <div class="membuat-border">
           <img src="img/menu/terazzibon-produk.jpg" alt="menu-img" />
           <h1 class="jenis-produk-unggulan">Bucket</h1>
@@ -84,7 +89,7 @@
           <a href="#" class="cta">Beli Sekarang</a>
         </div>
       </div>
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-duration="3000">
         <div class="membuat-border">
           <img src="img/menu/terazzibon-produk.jpg" alt="menu-img" />
           <h1 class="jenis-produk-unggulan">Bucket</h1>
@@ -97,7 +102,7 @@
           <a href="#" class="cta">Beli Sekarang</a>
         </div>
       </div>
-      <div class="row">
+      <div class="row" data-aos="fade-left" data-aos-duration="3000">
         <div class="membuat-border">
           <img src="img/menu/terazzibon-produk.jpg" alt="menu-img" />
           <h1 class="jenis-produk-unggulan">Bucket</h1>
@@ -111,9 +116,10 @@
         </div>
       </div>
     </section>
-    <div class="menu-lainnya">
+    <div class="menu-lainnya" data-aos="zoom-in">
       <a href="menu.html" class="more">Lihat Lainnya!</a>
     </div>
+
     <!-- Image slider start -->
     <div class="container">
       <div class="wrapper">
@@ -157,5 +163,10 @@
 
     <!-- My Javascript -->
     <script src="js/script.js"></script>
+    <!-- script of AOS Animate -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

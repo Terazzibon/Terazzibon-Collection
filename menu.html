@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- icon website -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
     <!--Feather Icon-->
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -30,9 +34,9 @@
       </div>
       <div class="navbar-extra">
         <!-- <a href="#" id="search-button"><i data-feather="search"></i></a> -->
-        <a href="#" id="shopping-cart-button"
+        <!-- <a href="#" id="shopping-cart-button"
           ><i data-feather="shopping-cart"></i
-        ></a>
+        ></a> -->
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
       <!-- Search From Start -->
@@ -48,8 +52,9 @@
           <form class="whatsapp-form">
             <h1>Send Order Via WhatsApp</h1>
             <h2>Informasi Pemesanan</h2>
+            <br />
             <div class="datainput">
-              <input type="text" class="wa" />
+              <input type="number" class="wa" required />
               <span class="highlight"></span><span class="bar"></span>
               <label>No WhatsApp</label>
               <p>
@@ -58,37 +63,37 @@
               </p>
             </div>
             <div class="datainput">
-              <input type="text" class="name" />
+              <input type="text" class="name" required />
               <span class="highlight"></span><span class="bar"></span>
               <label>Nama Penerima</label>
             </div>
             <div class="datainput">
-              <input type="text" class="product" />
+              <input type="text" class="product" required />
               <span class="highlight"></span><span class="bar"></span>
               <label>Nama Barang</label>
             </div>
             <div class="datainput">
-              <input type="text" class="jumlah" />
+              <input type="number" class="jumlah" required />
               <span class="highlight"></span><span class="bar"></span>
               <label>Jumlah Barang</label>
             </div>
             <div class="datainput">
-              <input type="text" class="hp" />
+              <input type="text" class="hp" required />
               <span class="highlight"></span><span class="bar"></span>
               <label>No Handphone</label>
             </div>
             <div class="datainput">
-              <input type="text" class="prov" />
+              <input type="text" class="prov" required />
               <span class="highlight"></span><span class="bar"></span>
               <label>Provinsi</label>
             </div>
             <div class="datainput">
-              <input type="text" class="kecamatan" />
+              <input type="text" class="kecamatan" required />
               <span class="highlight"></span><span class="bar"></span>
               <label>Kecamatan</label>
             </div>
             <div class="datainput">
-              <input type="text" class="kelurahan" />
+              <input type="text" class="kelurahan" required />
               <span class="highlight"></span><span class="bar"></span>
               <label>Kelurahan</label>
             </div>
@@ -114,9 +119,15 @@
     </nav>
     <!-- Navbar End -->
     <!-- Menu Section Start -->
+
     <section id="menu" class="menu">
       <h2><span>Produk</span> Kami</h2>
       <p>Semua produk merupakan 100% dibuat dari Terazzibon collection</p>
+      <!-- background tambahan -->
+      <div class="background-tambahan">
+        <img src="img/kupu-kupu.png" alt="sky" />
+      </div>
+
       <div class="row">
         <div class="menu-card">
           <div class="box box-1">
@@ -205,15 +216,15 @@
         </div>
       </div>
     </section>
-    <div class="popup" onclick="myFunction()">
-      Informasi Pemesanan!
-      <span class="popuptext" id="myPopup"
-        >Klik Keranjang Belanja Dan Isi Informasi Pemesanan, Maka Pesanan Akan
-        Dibawa Ke WhatsApp</span
+
+    <div class="myshop">
+      <a href="#" id="shopping-cart-button" class="bli" onclick="myFunction">
+        Beli Disini!</a
       >
     </div>
     <!-- Menu Section End -->
     <!-- Footer Start -->
+
     <footer>
       <div class="socials">
         <a href="https://www.instagram.com/terazzibon_collection/"
@@ -294,11 +305,5 @@
     </script>
     <!-- My Javascript -->
     <script src="js/script.js"></script>
-    <script>
-      function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-    </script>
   </body>
 </html>

@@ -6,9 +6,9 @@ document.querySelector("#hamburger-menu").onclick = (e) => {
   e.preventDefault();
 };
 
-// toggle class active untuk search form
-const searchForm = document.querySelector(".search-form");
-// const searchBox = document.querySelector("#search-box");
+// // toggle class active untuk search form
+// const searchForm = document.querySelector(".search-form");
+// // const searchBox = document.querySelector("#search-box");
 
 // document.querySelector("#search-button").onclick = (e) => {
 //   searchForm.classList.toggle("active");
@@ -31,7 +31,7 @@ document.querySelector("#shopping-cart-button").onclick = (e) => {
 
 // klik di luar elemen
 const hm = document.querySelector("#hamburger-menu");
-// const sb = document.querySelector("#search-button");
+// // const sb = document.querySelector("#search-button");
 const sc = document.querySelector("#shopping-cart-button");
 
 document.addEventListener("click", function (e) {
