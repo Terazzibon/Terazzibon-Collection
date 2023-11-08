@@ -28,7 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-image: linear-gradient(red, rgb(167, 4, 4));
+  background-image: linear-gradient(#feb153, #ff9209);
   border-bottom: 1px solid #513c28;
   position: fixed;
   top: 0;
@@ -45,7 +45,7 @@ body {
 }
 
 .navbar .navbar-logo span {
-  color: var(--primary);
+  color: rgb(53, 53, 53);
 }
 
 .navbar .navbar-nav a {
@@ -56,14 +56,14 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: var(--primary);
+  color: black;
 }
 
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid var(--primary);
+  border-bottom: 0.1rem solid black;
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -193,7 +193,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/image.jpg");
+  background-image: url("../img/opening1.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -255,7 +255,7 @@ body {
 
 .produk-unggulan h1 {
   text-align: center;
-  color: red;
+  color: #ff9209;
   font-size: 3rem;
   margin-bottom: 3rem;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -275,7 +275,7 @@ body {
 }
 .membuat-border h1 {
   font-size: 3rem;
-  color: red;
+  color: #ff9209;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   margin-bottom: 0%;
@@ -295,7 +295,7 @@ body {
   padding: 1rem 3rem;
   font-size: 1rem;
   color: #ffffff;
-  background-color: red;
+  background-color: #ff9209;
   border-radius: 1.5rem;
   box-shadow: 1px 1px 3px rgba(123, 123, 167, 0.5);
   font-family: "Times New Roman", Times, serif;
@@ -309,16 +309,16 @@ body {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.4rem;
-  background-color: #ff0000;
+  background-color: #ff9209;
   border-radius: 1.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 .menu-lainnya .more:hover {
-  background-color: #ff7a7a;
+  background-color: #feb153;
 }
 .hero .content h1 span {
-  color: var(--primary);
+  color: rgb(255, 174, 0);
 }
 
 .hero .content p {
@@ -335,12 +335,12 @@ body {
   padding: 1rem 3rem;
   font-size: 1.4rem;
   color: #fff;
-  background-color: #d80032;
+  background-color: #ff9209;
   border-radius: 1.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 .hero .content .cta:hover {
-  background-color: #f37676;
+  background-color: #feb153;
 }
 
 /* image slider start */
@@ -417,13 +417,13 @@ body {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
-  color: #d80032;
+  color: #ff9209;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 .about h2 span,
 .menu h2 span,
 .contact h2 span {
-  color: #d80032;
+  color: #ff9209;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
@@ -447,7 +447,7 @@ body {
 .about .row .content h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #d80032;
+  color: #ff9209;
 }
 
 .about .row .content p {
@@ -715,7 +715,7 @@ body {
 
 /* Footer */
 footer {
-  background-image: linear-gradient(red, rgb(167, 4, 4));
+  background-image: linear-gradient(#feb153, #ff9209);
   text-align: center;
   padding: 1rem 0;
   margin-top: -1.3rem;
@@ -991,7 +991,7 @@ form.whatsapp-form {
   }
 
   .navbar .navbar-nav a {
-    color: black;
+    color: #ff9209;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
